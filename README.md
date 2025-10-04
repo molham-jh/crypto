@@ -1,7 +1,7 @@
-Straightforward & Professional “I’m working on a crypto platform where people can learn and practice.”
+Straightforward & Professional “I’m building a crypto app for learning and practice.”
 
-Community-Focused “I want to build a space where folks can safely explore and get hands-on with crypto.”
+Community-Focused “I want to make a safe place to try out crypto.”
 
-Educational Emphasis “The idea is to create a place where people can really understand crypto by trying it out.”
+Educational Emphasis “It’s a space to learn crypto by doing.”
 
-Startup/Project Style “I’m launching a crypto hub that’s all about learning by doing—experimenting, practicing, and growing.”
+Startup/Project Style
