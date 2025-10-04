@@ -1,0 +1,57 @@
+/* Wrapper to center the content on the page */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to left top, #0875e3, #3c4249);
+  padding: 20px;
+}
+
+/* Box that contains the input and button */
+.box {
+  background: linear-gradient(to bottom left, rgba(167, 212, 2, 0.784), rgb(7, 63, 234));
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Input field */
+.input {
+  background: linear-gradient(to right, rgba(214, 214, 45, 0.574), rgba(210, 21, 157, 0.475));
+  padding: 10px;
+  border: 1px solid #b62222b4;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+.input option{
+  background-color: black;
+}
+
+/* Button styling */
+.btn {
+  background: #fff;
+  color: #333;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+}
+
+/* Optional: Portfolio section */
+.portfolio {
+  margin-top: 30px;
+}

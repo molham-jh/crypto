@@ -1,0 +1,18 @@
+.accounts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.accounts-container p ,h2{
+    color: wheat;
+    width: 300px;
+}
+.accounts-container .account{
+    background:linear-gradient(135deg, #8e44ad, #3498db);
+
+    border: none; 
+
+}

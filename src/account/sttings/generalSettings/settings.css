@@ -1,0 +1,65 @@
+.edit {
+    width: 250px;
+    /* Removed fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(115, 245, 8, 0.66), rgba(13, 185, 168, 0.614));
+    border-radius: 35px;
+    padding: 30px;
+    margin: 40px;
+    flex-wrap: wrap;
+    flex-direction: column; /* Optional for stacking content */
+}
+
+.edit h3{
+    color: black;
+    font-size: 30px;
+}
+/* settings.css */
+
+div {
+  box-sizing: border-box;
+}
+
+/* Layout for larger screens */
+.settings-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Edit section */
+.edit {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.edit h3 {
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.edit h3:hover {
+  color: #007BFF;
+  cursor: pointer;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .settings-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .edit h3 {
+    font-size: 1rem;
+  }
+}

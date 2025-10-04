@@ -1,0 +1,265 @@
+/* profile.css */
+
+/* Dark theme variables */
+:root {
+  --bg-dark: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --accent-color: #bb86fc;
+  --accent-secondary: #03dac6;
+  --border-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Light theme variables (optional toggle) */
+[data-theme="light"] {
+  --bg-dark: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --accent-color: #6200ee;
+  --accent-secondary: #018786;
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Base styles */
+.profile-container {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px var(--shadow-color);
+  transition: all 0.3s ease;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+/* Image upload section */
+.profile-image-container {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed var(--border-color);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.profile-image-container:hover {
+  border-color: var(--accent-color);
+  transform: scale(1.02);
+}
+
+.profile-image-container p {
+  padding-top: 80px;
+  color: var(--text-secondary);
+}
+
+/* File input */
+input[type="file"] {
+  display: block;
+  margin: 10px auto 30px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+  border-color: var(--accent-color);
+}
+
+/* Description section */
+.profile-description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-description p {
+  background-color: var(--bg-secondary);
+  padding: 15px;
+  border-radius: 8px;
+  font-style: italic;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  margin-top: 10px;
+  border-left: 4px solid var(--accent-color);
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  resize: vertical;
+  font-size: 14px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.2);
+}
+
+/* Buttons */
+button {
+  margin-top: 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background-color: var(--accent-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Profile info */
+.profile-form {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.profile-form h2 {
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.profile-form p {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.profile-form strong {
+  color: var(--accent-secondary);
+}
+
+/* Password eye icon */
+.password-toggle {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  color: var(--accent-color);
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.password-toggle:hover {
+  transform: scale(1.2);
+  color: var(--accent-secondary);
+}
+
+/* Crazy eye animation */
+@keyframes crazy-eye {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+  
+  .profile-image-container {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile-image-container p {
+    padding-top: 60px;
+    font-size: 14px;
+  }
+  
+  .profile-form {
+    font-size: 14px;
+  }
+  
+  .profile-form h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 1rem;
+  }
+  
+  .profile-image-container {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-image-container p {
+    padding-top: 45px;
+    font-size: 12px;
+  }
+  
+  textarea {
+    font-size: 13px;
+    padding: 10px;
+  margin-bottom: 8px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  
+  .profile-form {
+    padding: 15px;
+  }
+  
+  .profile-form h2 {
+    font-size: 18px;
+  margin-bottom: 15px;
+  }
+}
+
+/* Add some colorful elements */
+.profile-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #bb86fc, #03dac6);
+  border-radius: 12px 12px 0 0;
+}

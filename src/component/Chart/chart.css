@@ -1,0 +1,38 @@
+/* Chart container */
+.coin-chart {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Override Google Charts SVG text colors */
+.coin-chart svg text {
+  fill: var(--text-color) !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* Axis line colors */
+.coin-chart svg .google-visualization-axis-line {
+  stroke: var(--subtext-color) !important;
+}
+
+/* Gridline colors */
+.coin-chart svg .google-visualization-gridline {
+  stroke: var(--border-color) !important;
+}
+
+/* Tooltip styling */
+.coin-chart .google-visualization-tooltip {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-color) !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* Chart title styling */
+.coin-chart svg text[font-size="18"] {
+  fill: var(--accent-color) !important;
+  font-weight: bold;
+}

@@ -1,0 +1,112 @@
+/* Base reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #0d1117;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.confirm-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.confirm-form {
+  background: rgba(255,255,255,0.05);
+  border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px #4caf50;
+  transition: transform 0.5s ease, box-shadow 0.5s;
+}
+
+.confirm-form:hover {
+  transform: rotateX(8deg) rotateY(8deg);
+  box-shadow: 0 0 60px #80e27e;
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.confirmInput {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.confirmInput:focus {
+  transform: scale(1.1);
+  border-color: #4caf50;
+}
+
+.submitButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #66bb6a;
+}
+
+.success-msg {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #80e27e;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceFade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
